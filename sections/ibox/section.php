@@ -144,6 +144,7 @@ class pliBox extends PageLinesSection {
 			$text_link = ($link) ? sprintf('<div class="ibox-link"><a href="%s">%s <i class="icon-angle-right"></i></a></div>', $link, __('More', 'pagelines')) : '';
 
 
+
 			$format_class = ($media_format == 'left') ? 'media left-aligned' : 'top-aligned';
 			$media_class = 'media-type-'.$media_type;
 
@@ -178,8 +179,8 @@ class pliBox extends PageLinesSection {
 			$output .= sprintf(
 				'<div class="span%s ibox %s fix">
 					<div class="ibox-media img">
-						<span class="ibox-icon-border pl-animation pl-appear pl-contrast %s" style="%s" %s>
-							%s
+						<span class="ibox-icon-border pl-animation pl-appear pl-contrast %s" style="%s"> <a %s>
+							%s</a>
 						</span>
 					</div>
 					<div class="ibox-text bd">
